@@ -4,18 +4,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d1b55c46de.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
 <body>
+
+
+
+  </script>
+  <div class="load">
+  <div class ="loader-wrapper">
+  <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+
+  <script>
+  function hideOverlay () {
+      $(".load").hide();
+  }
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut(10500);
+            setTimeout(hideOverlay,1000);
+          });
+      </script>
+
+    </div>
 <header>
   <nav>
+    <div class= "search">
+    <div class ="search-bar">
+    <input class = "search-txt" type:"text" name="" placeholder="Type to search">
+    <a class="search-btn"href="#"></a>
+    <i class ="fas fa-search"></i>
 
+    </div>
+  </div>
 <div class="topnav" id="myTopnav">
 <a href "#"> <img src="images/logo.png" class="active"></a>
   <div class= "nav">
   <div class="dropdown">
-    <button class="dropbtn">AI
+    <button class="dropbtn"><a href ="#">AI</a>
       <i class="fa fa-angle-down"></i>
     </button>
     <div class="dropdown-content">
@@ -25,7 +56,7 @@
     </div>
   </div>
   <div class="dropdown">
-    <button class="dropbtn">Encryption
+    <button class="dropbtn"> <a href ="#">Encryption</a>
       <i class="fa fa-angle-down"></i>
     </button>
     <div class="dropdown-content">
@@ -35,7 +66,8 @@
     </div>
   </div>
   <div class="dropdown">
-    <button class="dropbtn">Technology
+    <button class="dropbtn"> <a href ="#">Technology</a>
+      <i class="fa fa-angle-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="#">Past</a>
@@ -43,12 +75,13 @@
       <a href="#">Future </a>
     </div>
   </div>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
 
 <script>
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -72,16 +105,70 @@ function myFunction() {
 </div>
 </div>
 
+<div class="hero-img2">
+
+
+<div class = "hero-text2">
+    <h3> Take a journey through time</h3>
+</div>
+<section>
+  <div class="col-3">
+    <h3>Past</h3>
+    <a href = "technology.html"><img src ="images/factory.png"></a>
+  </div>
+  <div class="col-3">
+    <h3> Present</h3>
+    <a href = "technology.html"><img src ="images/chip.png"></a>
+  </div>
+  <div class="col-3">
+    <h3> Future</h3>
+    <a href = "technology.html"><img src ="images/robotic.png"></a>
+  </div>
+
+</section>
+  </div>
+  <div class="hero-img3">
+    <div class ="hero-text3">
+      <h4> Encryption</h4>
+      <h3> Learn The Best Ways To <br>Keep Your Business Safe </h3>
+      <div class = "txt">
+      <button> Find Out More</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+</div>
+<footer>
+<div class="footer-container">
+<div class="left-col">
+<img src="images/logo.png" alt=""class="logo">
+<div class="social-media">
+  <a href="a"><i class="fab fa-facebook-f"></i></a>
+  <a href="a"><i class="fab fa-twitter"></i></a>
+  <a href="a"><i class="fab fa-instagram"></i></a>
+  <a href="a"><i class="fab fa-youtube"></i></a>
+  <a href="a"><i class="fab fa-linkedin-in"></i></a>
+</div>
+<p class="rights-text">	&copy; 2020 Created by Margin All Rights Reserved</p>
+</div>
+<div class="right-col">
+<h1>Our Newsletter</h1>
+<div class="border"></div>
+<p>Enter Your Email To Stay Up To Date</p>
+<form action="" class="newsletter-form"></form>
+<input type="text" class="txt" placeholder="Enter Your Email">
+<input type="submit" class="btn" value = "Submit">
+
+
+</div>
+
+</div>
 
 
 
-
-
-
-
-
-
-
-
+</footer>
 </body>
+
 </html>
