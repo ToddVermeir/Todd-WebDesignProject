@@ -1,0 +1,200 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/d1b55c46de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+  
+    </div>
+<header>
+  <nav>
+
+<div class="topnav" id="myTopnav">
+<a href ="index.html"> <img src="images/logo.png" class="active"></a>
+  <div class= "nav">
+  <div class="dropdown">
+    <button class="dropbtn"><a href ="#">AI</a>
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">History</a>
+      <a href="#">Robots</a>
+      <a href="#">Autonomous Cars</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"> <a href ="#">Encryption</a>
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Cybersecurity</a>
+      <a href="#">Breaches</a>
+      <a href="#">DIY</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"> <a href ="#">Technology</a>
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Past</a>
+      <a href="#">Present</a>
+      <a href="#">Future </a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</nav>
+</header>
+
+
+
+
+<section class = "video">
+  <video src="videos/sunrise2.mp4" autoplay="" muted="" loop ="" opacity ="0.6"></video>
+  <div class = "video-txt">
+    <h1>Technology</h1>
+    <p> Mankind : <br>We do not rest, stopping only to sleep and socialise, we strive to create easier lives and during that, we sometimes lose whats dearest to us. The past was hard, present even harder but the future, the future looks promising.</p>
+    </div>
+</section>
+<script type ="text/javascript">
+  let video = document.querySelector('video');
+  window.addEventListener('scroll', function(){
+    let value = 1 + window.scrollY/-600;
+    video.style.opacity = value
+  })
+</script>
+
+
+<section>
+<div class ="content1">
+  <div class="head2">
+  <h2>The Past</h2>
+</div>
+  <br>
+  <div class="head3">
+  <h3> Humanity's Greatest Struggle</h3>
+</div>
+<div class="headp">
+  <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
+    or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
+    These periods of time are extremely different to what we face today, no cars, no phones, no internet
+    and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
+    the people were almost all governed by peace, apart from a few war torn</p>
+<div class="headlink">
+    <a href = "#"> Learn More</a>
+  </div>
+    </div>
+</div>
+</section>
+<section>
+<div class ="content1">
+  <div class="head2">
+  <h2>The Present</h2>
+</div>
+  <br>
+  <div class="head3">
+  <h3> Humanity's Greatest Struggle</h3>
+</div>
+<div class="headp">
+  <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
+    or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
+    These periods of time are extremely different to what we face today, no cars, no phones, no internet
+    and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
+    the people were almost all governed by peace, apart from a few war torn</p>
+<div class="headlink">
+    <a href = "#"> Learn More</a>
+  </div>
+  </div>
+</div>
+</section>
+<section>
+<div class ="content1">
+  <div class="head2">
+  <h2>The Future</h2>
+  </div>
+  <br>
+  <div class="head3">
+  <h3> Humanity's Greatest Struggle</h3>
+  </div>
+  <div class="headp">
+  <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
+    or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
+    These periods of time are extremely different to what we face today, no cars, no phones, no internet
+    and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
+    the people were almost all governed by peace, apart from a few war torn</p>
+<div class="headlink">
+  <a href = "#"> Learn More</a>
+  </div>
+</div>
+</div>
+</section>
+<script src="scroll-out.js"></script>
+<script type ="text/javascript">
+ScrollOut ({
+  targets:'h2,h3,p,a'
+})
+
+
+</script>
+
+
+
+
+<footer>
+<div class="footer-container">
+<div class="left-col">
+<img src="images/logo.png" alt=""class="logo">
+<div class="social-media">
+  <a href="a"><i class="fab fa-facebook-f"></i></a>
+  <a href="a"><i class="fab fa-twitter"></i></a>
+  <a href="a"><i class="fab fa-instagram"></i></a>
+  <a href="a"><i class="fab fa-youtube"></i></a>
+  <a href="a"><i class="fab fa-linkedin-in"></i></a>
+</div>
+<p class="rights-text">	&copy; 2020 Created by Margin All Rights Reserved</p>
+</div>
+<div class="right-col">
+<h1>Our Newsletter</h1>
+<div class="border"></div>
+<p>Enter Your Email To Stay Up To Date</p>
+<form action="" class="newsletter-form"></form>
+<input type="text" class="txt" placeholder="Enter Your Email">
+<input type="submit" class="btn" value = "Submit">
+
+
+</div>
+
+</div>
+
+
+
+</footer>
+</body>
+
+</html>
