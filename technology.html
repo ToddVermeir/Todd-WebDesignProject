@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +8,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/d1b55c46de.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
+<title>Technology</title>
 </head>
 <body>
 
 
 
 
-  
+  <div class="load">
+  <div class ="loader-wrapper">
+  <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+
+  <script>
+  function hideOverlay () {
+      $(".load").hide();
+  }
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut(10500);
+            setTimeout(hideOverlay,2000);
+          });
+      </script>
+
     </div>
 <header>
   <nav>
@@ -79,7 +96,7 @@ function myFunction() {
   <video src="videos/sunrise2.mp4" autoplay="" muted="" loop ="" opacity ="0.6"></video>
   <div class = "video-txt">
     <h1>Technology</h1>
-    <p> Mankind : <br>We do not rest, stopping only to sleep and socialise, we strive to create easier lives and during that, we sometimes lose whats dearest to us. The past was hard, present even harder but the future, the future looks promising.</p>
+    <p> <br>Mankind doesn't not rest, stopping only to sleep and socialise, we strive to create easier lives and during that, we sometimes lose whats dearest to us. The past was hard, present even harder but the future, the future looks promising.</p>
     </div>
 </section>
 <script type ="text/javascript">
@@ -90,85 +107,72 @@ function myFunction() {
   })
 </script>
 
+  <section class="center" data-aos="fade-left">
+<div class ="row">
 
-<section>
-<div class ="content1">
-  <div class="head2">
+  <div class="column10">
+
+    <div class="col-txt">
   <h2>The Past</h2>
-</div>
   <br>
-  <div class="head3">
   <h3> Humanity's Greatest Struggle</h3>
-</div>
-<div class="headp">
   <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
     or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
     These periods of time are extremely different to what we face today, no cars, no phones, no internet
     and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
     the people were almost all governed by peace, apart from a few war torn</p>
-<div class="headlink">
     <a href = "#"> Learn More</a>
   </div>
-    </div>
+  </div>
+    <div class="column10">
+    <img src="images/past.jpeg">
+  </div>
 </div>
 </section>
-<section>
-<div class ="content1">
-  <div class="head2">
+<section class="center" data-aos="fade-right">
+<div class ="row">
+  <div class="column10">
+  <img src="images/present.jpg">
+</div>
+  <div class="column10">
+    <div class="col-txt">
   <h2>The Present</h2>
-</div>
   <br>
-  <div class="head3">
-  <h3> Humanity's Greatest Struggle</h3>
-</div>
-<div class="headp">
-  <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
-    or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
-    These periods of time are extremely different to what we face today, no cars, no phones, no internet
-    and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
-    the people were almost all governed by peace, apart from a few war torn</p>
-<div class="headlink">
+  <h3> A World Full Of Fear</h3>
+  <p>We live in a world today ravaged by greed, hunger, disease and disaster. However, not all is bad, some people still cling to hope, respect their elders and take care of the generations
+  to come. This people give us hope for the future, hope that our descendents will be able to experience the same things we have. The amazon will stand, orangutans free to live without fear
+animals reforging their lines of evolution. We live in challenging times</p>
     <a href = "#"> Learn More</a>
   </div>
-  </div>
+</div>
+
 </div>
 </section>
-<section>
-<div class ="content1">
-  <div class="head2">
+<section class="center" data-aos="fade-left">
+<div class ="row">
+  <div class="column10">
+    <div class="col-txt">
   <h2>The Future</h2>
-  </div>
   <br>
-  <div class="head3">
-  <h3> Humanity's Greatest Struggle</h3>
-  </div>
-  <div class="headp">
-  <p>Some of Humanity's greatest achievements have happenend in the past. Whether its the wheel
-    or the construction of the Seven Wonders of The World,history shows the greatness we have achieved.
-    These periods of time are extremely different to what we face today, no cars, no phones, no internet
-    and above all else, no airplanes. While we believe that it would be extremely hard to live back then,
-    the people were almost all governed by peace, apart from a few war torn</p>
-<div class="headlink">
-  <a href = "#"> Learn More</a>
+  <h3> A Place We All Dream Of</h3>
+  <p>No one knows exactly what the future holds, it may be utopian, with green mega-cities and a place where everyone is accepted, no matter their ethnic diversity.
+  It could however be dystopian, with dry, barren lands that are unable to bore food for man to survive, it could be the time of the next mass extinction and
+could spell doom for the human race. One thing is for sure: The Actions We Do Today Could Impact Greatly On Our Future</p>
+    <a href = "#"> Learn More</a>
   </div>
 </div>
+    <div class="column10">
+    <img src="images/future.jpg">
+  </div>
 </div>
 </section>
-<script src="scroll-out.js"></script>
-<script type ="text/javascript">
-ScrollOut ({
-  targets:'h2,h3,p,a'
-})
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
-
-
-
-
 <footer>
 <div class="footer-container">
-<div class="left-col">
+<div class = "left-col">
 <img src="images/logo.png" alt=""class="logo">
 <div class="social-media">
   <a href="a"><i class="fab fa-facebook-f"></i></a>
