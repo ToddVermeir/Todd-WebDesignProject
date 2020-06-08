@@ -330,6 +330,7 @@ button:hover {
   padding:90px 0;
 
 
+
 }
 .footer-container {
   max-width: 1300px;
@@ -414,6 +415,69 @@ transition:.3s linear;
 /* Footer CSS */
 /* AI css
 */
+
+
+section {
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  display: flex;
+}
+.slide {
+  position: relative;
+  background: #0f0;
+  height: 100%;
+  flex: 1;
+  border-right: 2px solid #000;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.slide:last-child {
+  border-right: none;
+}
+.slide:nth-child(1) {
+  background: url("images/one.jpg");
+  background-position: center center;
+}
+.slide:nth-child(2) {
+background: url("images/two.jpg");
+  background-position: center center;
+}
+.slide:nth-child(3) {
+background: url("images/three.jpg");
+  background-position: center center;
+}
+.slide:nth-child(4) {
+background: url("images/four.jpg");
+  background-position: center center;
+}
+.slide:nth-child(5) {
+background: url("images/five.jpg");
+  background-position: center center;
+}
+.slide:hover {
+  flex-grow: 5;
+
+}
+.slide .content20 {
+  position: absolute;
+  bottom:0;
+  margin: 40px;
+  padding: 30px;
+  background: #000;
+  color:#fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0s;
+  transform: translateY(100px);
+}
+.slide:hover .content20 {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transform: translateY(0);
+}
 .columns img {
   height:50px;
   width: 50px;
@@ -468,13 +532,14 @@ height:60vh;
 .columns:hover {
   box-shadow:0 8px 10px rgba(0,0,0,0.12),
   0 8px 10px rgba(0,0,0,0.24);
+  transform:scale(1.1);
+  transition: 1s;
 }
 /* Technology css
 */
 .video {
   height: 60vh;
   position: relative;
-  width: 86%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,7 +553,6 @@ height:60vh;
   width:100%;
   height:100%;
   object-fit: cover;
-  pointer-events: none;
 }
 .video-txt {
   z-index:1;
@@ -549,10 +613,17 @@ height:60vh;
 
 
 @media screen and (max-width:600px){
-  .column2 {
-    width: 100%;
+  .column10 {
+
   }
 }
+@media screen and (min-width:600px){
+  .column10 p h2 h3  {
+
+    font-size: 10px;
+  }
+}
+
 .col-txt {
   padding-top: 200px;
   margin-left: 20px;
@@ -569,11 +640,6 @@ height:60vh;
   border-bottom: 2px solid rgb(244, 54, 28);
   transition: left 1s;
 
-}
-@media screen and (max-width:600px){
-  .column10 {
-    font-size: 10px;
-  }
 }
 
 /* Encryption css
