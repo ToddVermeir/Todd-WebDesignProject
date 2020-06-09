@@ -334,6 +334,7 @@ button:hover {
   padding:90px 0;
 
 
+
 }
 .footer-container {
   max-width: 1300px;
@@ -641,6 +642,19 @@ height:60vh;
 .column10 h3{
   font-size: 20px;
   line-height: 30px;
+}
+
+
+@media screen and (max-width:600px){
+  .column10 {
+
+  }
+}
+@media screen and (min-width:600px){
+  .column10 p h2 h3  {
+
+    font-size: 10px;
+  }
 }
 
 .col-txt {
