@@ -442,6 +442,11 @@ align-items: center;
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 600px) {
+  div.txt {
+color:white;
+  }
+}
 
 /* Footer CSS */
 /* AI css
